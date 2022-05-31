@@ -1,2 +1,2 @@
-# react-crud
-Laravel + React CRUD application using API
+# Learning React
+All the code is of learning time
