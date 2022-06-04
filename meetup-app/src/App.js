@@ -1,29 +1,19 @@
 import React from "react";
-import { Route, Link, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
+// Pages
 import AllMeetups from "./pages/AllMeetups";
 import NewMeetup from "./pages/NewMeetup";
 import Favourites from "./pages/Favourites";
 import NotFound from "./pages/NotFound";
 
+// Components
+import MainNavigation from "./components/layouts/MainNavigation";
+
 function App() {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            {/* A <Link> is use to define Navbar paths */}
-            <Link to="/">All Meetups</Link>
-          </li>
-          <li>
-            <Link to="/new-meetup">New Meetup</Link>
-          </li>
-          <li>
-            <Link to="/favourites">Favourites</Link>
-          </li>
-        </ul>
-      </nav>
-
+      <MainNavigation />
       {/* A <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       <Routes>
