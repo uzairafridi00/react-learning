@@ -1,5 +1,5 @@
 import React from "react";
-import MeetupList from "../components/layouts/meetups/MeetupList";
+import MeetupList from "../components/meetups/MeetupList";
 
 function AllMeetups() {
   const DUMMY_DATA = [
