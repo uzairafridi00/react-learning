@@ -8,9 +8,7 @@ function AllMeetupsPage() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(
-      "https://react-getting-started-48dec-default-rtdb.firebaseio.com/meetups.json"
-    )
+    fetch("https://meetup-app-1c629-default-rtdb.firebaseio.com/meetups.json")
       .then((response) => {
         return response.json();
       })
