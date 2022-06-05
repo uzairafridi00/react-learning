@@ -1,38 +1,50 @@
-import React from "react";
+import { useState, useEffect } from "react";
+
 import MeetupList from "../components/meetups/MeetupList";
 
-function AllMeetups() {
-  const DUMMY_DATA = [
-    {
-      id: "m1",
-      title: "This is a first meetup",
-      image:
-        "https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg",
-      address: "Meetupstreet 5, 12345 Meetup City",
-      description:
-        "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
-    },
-    {
-      id: "m2",
-      title: "This is a second meetup",
-      image:
-        "https://cdn.pixabay.com/photo/2015/01/08/18/11/laptops-593296_960_720.jpg",
-      address: "Meetupstreet 5, 12345 Meetup City",
-      description:
-        "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
-    },
-  ];
+function AllMeetupsPage() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedMeetups, setLoadedMeetups] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+    fetch(
+      "https://react-getting-started-48dec-default-rtdb.firebaseio.com/meetups.json"
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const meetups = [];
+
+        for (const key in data) {
+          const meetup = {
+            id: key,
+            ...data[key],
+          };
+
+          meetups.push(meetup);
+        }
+
+        setIsLoading(false);
+        setLoadedMeetups(meetups);
+      });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section>
+        <p>Loading...</p>
+      </section>
+    );
+  }
+
   return (
-    <div>
-      <h1>AllMeetups</h1>
-      {/* Arrays are rendered Correctly by React using Tags */}
-      {/* {[<li>Item1</li>, <li>Item2</li>]} */}
-      {/* {DUMMY_DATA.map((meetup) => {
-        return <li key={meetup.id}>{meetup.title}</li>;
-      })} */}
-      <MeetupList meetups={DUMMY_DATA} />
-    </div>
+    <section>
+      <h1>All Meetups</h1>
+      <MeetupList meetups={loadedMeetups} />
+    </section>
   );
 }
 
-export default AllMeetups;
+export default AllMeetupsPage;
