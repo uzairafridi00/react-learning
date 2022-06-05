@@ -1,10 +1,10 @@
 import React from "react";
-import { useHistory } from "react";
+import { useNavigate } from "react-router-dom";
 
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
 function NewMeetup() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function addMeetupHandler(meetupData) {
     // By Default Fetch sends the GET request
@@ -16,7 +16,7 @@ function NewMeetup() {
         "Content-Type": "application/json",
       },
     }).then(() => {
-      history.replace("/");
+      navigate("/");
     });
   }
   return (
