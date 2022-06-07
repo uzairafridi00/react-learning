@@ -1,8 +1,18 @@
+import { useContext } from "react";
+
 import React from "react";
 import classes from "./MeetupItems.module.css";
 import Card from "../ui/Card";
+import FavouritesContext from "../../store/favourite-context";
 
 function MeetupItems(props) {
+
+  useContext();
+
+  function toggleFavouriteStatusHandler() {
+
+  }
+
   return (
     <div>
       <li className={classes.item}>
