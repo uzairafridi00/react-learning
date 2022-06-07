@@ -19,13 +19,13 @@ export function FavouritesContextProvider(props) {
   }
 
   function removeFavouriteHandler(meetupId) {
-    setUserFavourites(prevUserFavourites => {
-      return prevUserFavourites.filter(meetup => meetup.id !== meetupId);
+    setUserFavourites((prevUserFavourites) => {
+      return prevUserFavourites.filter((meetup) => meetup.id !== meetupId);
     });
   }
 
   function itemIsFavouriteHandler(meetupId) {
-return userFavourites.some(meetup => meetup.id === meetupId);
+    return userFavourites.some((meetup) => meetup.id === meetupId);
   }
 
   const context = {
@@ -44,4 +44,4 @@ return userFavourites.some(meetup => meetup.id === meetupId);
   );
 }
 
-export default FavouritesContext;   
+export default FavouritesContext;
