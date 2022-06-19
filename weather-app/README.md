@@ -1,6 +1,7 @@
 # Weather App
 
-When you clone this project just simply run the following commands
+When you clone this project just simply run the following command to install the libraries
+<br />
 ``` npm install ```
 
 # Getting Started with Create React App
