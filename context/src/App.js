@@ -1,11 +1,10 @@
 import "./App.css";
-import ComponentA from "./components/ComponentA";
+import Example1 from "./Example1"
 function App() {
   return (
     <div className="App">
       <h1>Context API Tutorial</h1>
-      <ComponentA />
-      <ComponentB />
+      {/* <Example1 /> */}
     </div>
   );
 }
