@@ -23,6 +23,7 @@ Pass the value to useContext of createContext variable.
 
 Now you can use your values in your child components.
 
+##  Drawback
 If we have alot of components and is using same Context then by changing one variable or value in context then it will re-render all the components which are wrap in Context Provider.
 
 
