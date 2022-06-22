@@ -1,16 +1,12 @@
-import React, { useState, createContext } from "react";
-
-const AppContext = createContext(null);
+import React, { useState } from "react";
 
 export const Parent = () => {
   const [userName, setUserName] = useState("Uzair");
   return (
-    <AppContext.Provider value={{userName, setUserName}}>
-      <div>
-        {userName}
-        <Child setUserName={setUserName} />
-      </div>
-    </AppContext.Provider>
+    <div>
+      {userName}
+      <Child setUserName={setUserName} />
+    </div>
   );
 };
 

@@ -5,22 +5,22 @@ const AppContext = createContext(null);
 export const Parent = () => {
   const [userName, setUserName] = useState("Uzair");
   return (
-    <AppContext.Provider value={{userName, setUserName}}>
+    <AppContext.Provider value={{ userName, setUserName }}>
       <div>
         {userName}
-        <Child/>
+        <Child />
       </div>
     </AppContext.Provider>
   );
 };
 
 export const Child = () => {
-  return <GrandChild/>;
+  return <GrandChild />;
 };
 
 export const GrandChild = () => {
-    // Now we don't need to do drilling of Components
-    const {setUserName} = useContext(AppContext);
+  // Now we don't need to do drilling of Components
+  const { setUserName } = useContext(AppContext);
   return (
     <div>
       <button
