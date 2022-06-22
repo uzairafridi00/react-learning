@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useContext } from "react";
 
 const AppContext = createContext(null);
 
@@ -8,17 +8,19 @@ export const Parent = () => {
     <AppContext.Provider value={{userName, setUserName}}>
       <div>
         {userName}
-        <Child setUserName={setUserName} />
+        <Child/>
       </div>
     </AppContext.Provider>
   );
 };
 
-export const Child = (props) => {
-  return <GrandChild setUserName={props.setUserName} />;
+export const Child = () => {
+  return <GrandChild/>;
 };
 
-export const GrandChild = (props) => {
+export const GrandChild = () => {
+    // Now we don't need to do drilling of Components
+    const {setUserName} = useContext(AppContext);
   return (
     <div>
       <button
