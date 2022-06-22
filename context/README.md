@@ -1,7 +1,7 @@
 ## Notes
 We use createContext & useContext to avoid props drilling inside child components.
 
-Always wrap your code to use Context
+Always wrap your code to use Context.
 
 ` <AppContext.Provider value={{userName, setUserName}}>
       <div>
@@ -15,7 +15,7 @@ Then wrap it around your parent component passing the value prop with your data 
 
 Now in your child component just use useContext.
 
-Now we don't need to do drilling of Components
+Now we don't need to do drilling of Components.
 
 `const {setUserName} = useContext(AppContext);`
 
@@ -25,6 +25,8 @@ Now you can use your values in your child components.
 
 ##  Drawback
 If we have alot of components and is using same Context then by changing one variable or value in context then it will re-render all the components which are wrap in Context Provider.
+
+Sometimes props drilling is better than Unnecessay re-renders like in Example3.js file, because it would slow down your app. 
 
 
 ## Available Scripts
