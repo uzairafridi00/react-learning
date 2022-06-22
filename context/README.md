@@ -28,6 +28,7 @@ If we have alot of components and is using same Context then by changing one var
 
 Sometimes props drilling is better than Unnecessay re-renders like in Example3.js file, because it would slow down your app. 
 
+We can remove the components or values which re-render mostly and put them in other context or pass their values using props.
 
 ## Available Scripts
 
