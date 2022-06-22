@@ -30,6 +30,12 @@ Sometimes props drilling is better than Unnecessay re-renders like in Example3.j
 
 We can remove the components or values which re-render mostly and put them in other context or pass their values using props.
 
+## Alternatives
+
+Redux toolkit 
+Recoil
+Zustand
+
 ## Available Scripts
 
 In the project directory, you can run:
