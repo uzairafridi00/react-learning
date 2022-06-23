@@ -1,12 +1,18 @@
 import React from 'react'
+import useFireStore from '../hooks/useFireStore'
 
-function ImageGrid() {
+function ImageGrid({setSelectedImg}) {
 
-    
+    const {docs} = useFireStore('images');
+    console.log(docs);
 
   return (
     <div className='img-grid'>
-        <h1>images</h1>
+        {docs && docs.map(doc => (
+            <div className='img-wrap' key={doc.id} onClick={() => setSelectedImg(doc.url)}>
+                <img src={doc.url} alt=""/>
+            </div>
+        ))}
     </div>
   )
 }
