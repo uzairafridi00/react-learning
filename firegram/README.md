@@ -1,6 +1,13 @@
 # React + Firebase Image Gallery
 
 A simple website made in React with backend in Firebase.
+Clone the project with git clone and then run npm install in project.
+
+
+1) Create your account in firebase.
+2) Make any test project.
+3) Then from setting copy the web app's Firebase configuration.
+4) Paste that to firebase/config.js file.
 
 ## Available Scripts
 
