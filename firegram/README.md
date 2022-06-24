@@ -9,6 +9,20 @@ Clone the project with git clone and then run npm install in project.
 3) Then from setting copy the web app's Firebase configuration.
 4) Paste that to firebase/config.js file.
 
+## Screenshots
+
+Main Page
+
+<p align="center">
+<img src="https://github.com/uzairafridi00/react-learning/blob/main/firegram/images/front.png" alt="Image Not Found"/>
+</p>
+
+Modal to Show Image
+
+<p align="center">
+<img src="https://github.com/uzairafridi00/react-learning/blob/main/firegram/images/Modal.png" alt="Image Not Found"/>
+</p>
+
 ## Available Scripts
 
 In the project directory, you can run:
