@@ -1,10 +1,14 @@
-import "./App.css";
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SignupForm from "./components/SignUpForm";
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <h1>Hello Form</h1>
-    </div>
+   <>
+     <SignupForm />
+   </>
   );
 }
 
