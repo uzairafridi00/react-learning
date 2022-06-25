@@ -6,7 +6,7 @@ const validate = (values) => {
 
   if (!values.firstName) {
     errors.firstName = "Required";
-  } else if (values.firstName.length > 15) {
+  } else if (vaNlues.firstName.length > 15) {
     errors.firstName = "Must be 15 characters or less";
   }
 
@@ -35,6 +35,7 @@ const SignupForm = () => {
     validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
+      console.log(JSON.stringify(value, null, 2));
     },
   });
 
