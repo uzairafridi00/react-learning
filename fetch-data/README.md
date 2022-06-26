@@ -1,8 +1,8 @@
 # Fetching API Calls
 
 All the methods of Calling API in Reactjs i.e
-1) Fetch 
-2) Axios
+1) Fetch (Built-in)
+2) Axios (npm install axios)
 3) 
 4) 
 
