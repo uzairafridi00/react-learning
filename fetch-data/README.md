@@ -7,15 +7,15 @@ All the methods of Calling API in Reactjs i.e
 4) 
 
 ### 1) Fetch
-The Fetch API provides an interface for fetching resources in an asynchronous manner.
-It returns a promise.
-It is an object which contains a single value either a Response or an Error that occured.
+The Fetch API provides an interface for fetching resources in an asynchronous manner. <br/>
+It returns a promise.<br/>
+It is an object which contains a single value either a Response or an Error that occured.<br/>
 .then() tells the program what to do once Promise is completed.
 
 ### 2) Axios
-It is an open source library for making HTTP requests.
-It works on both Browsers and Node js
-It can be included in an HTML file by using an external CDN
+It is an open source library for making HTTP requests. <br/>
+It works on both Browsers and Node js. <br/>
+It can be included in an HTML file by using an external CDN. <br/>
 It also returns promises like Fetch API
 
 `npm install axios`
