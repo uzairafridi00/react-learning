@@ -18,8 +18,8 @@ It works on both Browsers and Node js. <br/>
 It can be included in an HTML file by using an external CDN. <br/>
 It also returns promises like Fetch API
 
-`npm install axios`
-You can use get,put,post,delete methods which http supports
+`npm install axios` <br/>
+You can use get,put,post,delete methods which http supports. <br/>
 It by default (internally) change the get methods of API to JSON but in Fetch we Use to convert to JSON
 
 
