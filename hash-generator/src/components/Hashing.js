@@ -53,11 +53,57 @@ function Hashing() {
       } else if (algorithm === "sha512") {
         result = await sha512(fr.result);
       }
+      // Setting the hashed text as the output
+      setOutput(result);
+
+      // Setting the content of the file as file input
+      setFileInput(fr.result);
     };
+    // Reading the file.
+    fr.readAsText(e.target.files[0]);
   };
 
   // For handling algorithm change
-  const handleAlgorithmChange = async (e) => {};
+  const handleAlgorithmChange = async (e) => {
+    // Get the selected algorithm
+    let value = e.target.value;
+
+    let result = "";
+
+    // Check if we have a text input
+    if (textInput) {
+      // Hash the text based on the selected algorithm
+      if (value == "sha1") {
+        result = await sha1(textInput);
+      } else if (value == "sha256") {
+        result = await sha256(textInput);
+      } else if (value == "sha384") {
+        result = await sha384(textInput);
+      } else if (value == "sha512") {
+        result = await sha512(textInput);
+      }
+    }
+
+    // Check if we have a file input
+    if (fileInput) {
+      // Hash the file content based on the selected algorithm
+      if (value == "sha1") {
+        result = await sha1(fileInput);
+      } else if (value == "sha256") {
+        result = await sha256(fileInput);
+      } else if (value == "sha384") {
+        result = await sha384(fileInput);
+      } else if (value == "sha512") {
+        result = await sha512(fileInput);
+      }
+    }
+
+    // Set the selected algorithm
+    setAlgorithm(value);
+
+    // Set the hashed text
+    setOutput(result);
+  };
 
   return (
     <>
