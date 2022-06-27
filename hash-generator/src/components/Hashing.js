@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { sha1, sha256, sha384, sha512 } from "crypto-hash";
 import "./hashing.css";
 
 function Hashing() {
@@ -9,10 +10,51 @@ function Hashing() {
   let [output, setOutput] = useState("");
 
   // For handling text input
-  const handleTextInput = async (e) => {};
+  const handleTextInput = async (e) => {
+    // Get the Value
+    let value = e.target.value;
+
+    // Store the Value
+    let result = "";
+
+    // Get the Current Active Algorithm selected
+    if (algorithm === "sha1") {
+      result = await sha1(value);
+    } else if (algorithm === "sha256") {
+      result = await sha256(value);
+    } else if (algorithm === "sha384") {
+      result = await sha384(value);
+    } else if (algorithm === "sha512") {
+      result = await sha512(value);
+    }
+
+    // Set the hashed text as output
+    setOutput(result);
+
+    // Set the value of the text input
+    setTextInput(value);
+  };
 
   // For handling file input
-  const handleFileInput = (e) => {};
+  const handleFileInput = (e) => {
+    const fr = new FileReader();
+
+    // Listening to when the file has been read.
+    fr.onload = async () => {
+      let result = "";
+
+      // Hashing the content based on save algorithm
+      if (algorithm === "sha1") {
+        result = await sha1(fr.result);
+      } else if (algorithm === "sha256") {
+        result = await sha256(fr.result);
+      } else if (algorithm === "sha384") {
+        result = await sha384(fr.result);
+      } else if (algorithm === "sha512") {
+        result = await sha512(fr.result);
+      }
+    };
+  };
 
   // For handling algorithm change
   const handleAlgorithmChange = async (e) => {};
