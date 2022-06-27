@@ -7,7 +7,6 @@ function Swr() {
   const { data, error } = useSWR("https://dog.ceo/api/breeds/image/random", fetcher, {
     suspense: true,
   });
-
   if (error) {
     return <h1>Some External Issue</h1>
   }
@@ -21,5 +20,4 @@ function Swr() {
     </>
   );
 }
-
 export default Swr;
