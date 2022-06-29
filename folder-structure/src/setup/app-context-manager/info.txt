@@ -1,0 +1,1 @@
+Store your App context here to access from all over the app
