@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import "./App.css";
+import ReactSwitch from "react-switch";
 
 import Form from "./components/Form";
 
@@ -15,8 +16,12 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <div id={theme}>
+        <div className="App" id={theme}>
           <Form />
+          <div className="switch">
+            <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+          </div>
         </div>
       </ThemeContext.Provider>
     </>
