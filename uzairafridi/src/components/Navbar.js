@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Signature from "../assets/images/uzair-sign.png";
 
@@ -15,34 +15,37 @@ function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-60 w-70"
-                  src={Signature}
-                  alt="uzair-sign"
-                />
+                <img className="h-70 w-80" src={Signature} alt="uzair-sign" />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                <Link
-              to="/"
-              className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Home
-            </Link>
+                  <Link
+                    to="/"
+                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Home
+                  </Link>
 
-            <Link
-              to="/projects"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Projects
-            </Link>
+                  <Link
+                    to="/projects"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Projects
+                  </Link>
 
-            <Link
-              to="/experiences"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Experiences
-            </Link>
+                  <Link
+                    to="/experiences"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Experiences
+                  </Link>
+
+                  <Link
+                    to="/contact"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Contact
+                  </Link>
                 </div>
               </div>
             </div>
@@ -124,6 +127,13 @@ function Navbar() {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Experiences
+                </Link>
+
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Contact
                 </Link>
               </div>
             </div>
