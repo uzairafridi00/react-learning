@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 
 import { Link } from "react-router-dom";
 
-import Signature from "../assets/images/uzair-sign.png";
+import Signature from "../assets/brands/uzair-sign.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,17 +27,17 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    to="/projects"
+                    to="/work"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Projects
+                    Work
                   </Link>
 
                   <Link
-                    to="/experiences"
+                    to="/skills"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Experiences
+                    Skills
                   </Link>
 
                   <Link
