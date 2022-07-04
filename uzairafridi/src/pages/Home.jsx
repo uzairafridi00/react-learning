@@ -1,5 +1,10 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
 import About from "./About";
 
@@ -7,7 +12,6 @@ function Home() {
   return (
     <>
       <div name="home" className="w-full h-screen bg-[#0a192f]">
-        {/* Container */}
         <div className="max-w-[1200px] mx-auto px-8 flex flex-col justify-center h-full">
           <p className="text-[#0EC4B7]">Hi, my name is</p>
           <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
@@ -22,6 +26,20 @@ function Home() {
             I’m focused on building responsive full-stack web applications.
           </p>
           <div>
+            <div className="inline-flex">
+              <a href="">
+                <AiFillGithub className="text-5xl text-white m-2 hover:text-black" />
+              </a>
+
+              <a href="">
+                <AiFillLinkedin className="text-5xl text-white m-2 hover:text-blue-600" />
+              </a>
+
+              <a href="">
+                <AiFillTwitterCircle className="text-5xl text-white m-2 hover:text-blue-600" />
+              </a>
+            </div>
+
             <Link to="/projects">
               <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
                 View Work
