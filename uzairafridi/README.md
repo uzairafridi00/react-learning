@@ -20,7 +20,6 @@ An event that will trigger this hook
 UI component where this event will run
 
 ```
-5) All the code 
 
 ## Getting Started with Create React App
 
