@@ -33,19 +33,19 @@ function Navbar() {
                     Work
                   </Link>
 
-                  <Link
+                  {/* <Link
                     to="/skills"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     Skills
-                  </Link>
+                  </Link> */}
 
-                  <Link
+                  {/* <Link
                     to="/about"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     About
-                  </Link>
+                  </Link> */}
 
                   <Link
                     to="/contact"
@@ -123,25 +123,26 @@ function Navbar() {
                 </Link>
 
                 <Link
-                  to="/projects"
+                  to="/work"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                  Work
                 </Link>
 
-                <Link
-                  to="/experiences"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Experiences
-                </Link>
+                {/* <Link
+                    to="/skills"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Skills
+                  </Link> */}
 
-                <Link
-                  to="/about"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  About
-                </Link>
+                  {/* <Link
+                    to="/about"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    About
+                  </Link> */}
+
 
                 <Link
                   to="/contact"
