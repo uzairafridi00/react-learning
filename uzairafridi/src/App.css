@@ -14,6 +14,10 @@
     }
 }
 
+body {
+    font-family: 'Poppins', sans-serif !important;
+  }
+
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;

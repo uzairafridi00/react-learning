@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import About from "./About";
-import Skills from "./Skills";
+import Skills from "./Skills"
 
 function Home() {
   return (

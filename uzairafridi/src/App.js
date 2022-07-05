@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/*" element={<NotFound />}></Route>
           </Routes>
+          <Footer />
         </Router>
       </div>
     </>
