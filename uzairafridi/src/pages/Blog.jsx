@@ -3,6 +3,17 @@ import React from "react";
 import xssimg from '../assets/images/xss-img.png';
 
 function Blog() {
+
+  const blog = [
+    {
+      id:1,
+      src: xssimg,
+      title: "XSS",
+      subtitle: "SXSS",
+      description: "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    },
+  ]
+
   return (
     <>
       <section className="text-gray-300 body-font w-full h-screen bg-[#0a192f]">
@@ -18,29 +29,32 @@ function Blog() {
 
           {/* Container Starts Here */}
           <div className="flex flex-wrap -m-4 cursor-pointer">
-            <div
+
+            {blog.map(({id, src, title, subtitle, description}) => (
+              <div key={id}
               className="lg:w-1/3 sm:w-1/2 p-4"
               data-aos="fade-left">
               <div className="flex relative shadow-[#040c16] hover:scale-110 duration-500">
                 <img
-                  alt={xssimg}
+                  alt={src}
                   className="absolute inset-0 w-full h-full object-cover object-center rounded"
-                  src={xssimg}
+                  src={src}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white rounded opacity-0 hover:opacity-100 hover:transition-opacity">
-                  <h2 className="tracking-widest title-font font-bold text-[#0EC4B7] mb-1">
-                    THE SUBTITLE
+                  <h2 className="text-3xl tracking-widest title-font font-bold text-[#0EC4B7] mb-1">
+                    {title}
                   </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
+                  <h1 className="title-font text-base font-medium text-gray-900 mb-3">
+                    {subtitle}
                   </h1>
                   <p className="leading-relaxed text-gray-500">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                    {description}
                   </p>
                 </div>
               </div>
             </div>
+
+            ))}
 
           </div>
         </div>
