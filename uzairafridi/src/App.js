@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       delay: 1000,
-      duration: 600,
+      duration: 500,
       easing: 'ease-in',
     });
     AOS.refresh();
