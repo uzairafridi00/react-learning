@@ -16,42 +16,52 @@ const Skills = () => {
     {
       id: 1,
       src: HTML,
+      name: "HTML",
     },
     {
       id: 2,
       src: CSS,
+      name: "CSS",
     },
     {
       id: 3,
       src: JavaScript,
+      name: "JavaScript",
     },
     {
       id: 4,
       src: ReactImg,
+      name: "React",
     },
     {
       id: 5,
       src: Node,
+      name: "Node",
     },
     {
       id: 6,
       src: FireBase,
+      name: "Firebase",
     },
     {
       id: 7,
       src: AWS,
+      name: "AWS",
     },
     {
       id: 8,
       src: GitHub,
+      name: "Github",
     },
     {
       id: 9,
       src: Tailwind,
+      name: "Tailwind",
     },
     {
       id: 10,
       src: Mongo,
+      name: "Mongo",
     },
   ];
 
@@ -71,13 +81,13 @@ const Skills = () => {
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
             {/* Parse the JSON from above data */}
-          {skills.map(({ id, src }) => (
+          {skills.map(({ id, src, name }) => (
             <div
               key={id}
               className="cursor-pointer shadow-md shadow-[#040c16] hover:scale-110 duration-500"
             >
               <img className="w-20 mx-auto" src={src} alt={src} />
-              <p className="my-4">HTML</p>
+              <p className="my-4">{name}</p>
             </div>
           ))}
         </div>
