@@ -39,7 +39,7 @@ function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-[#0EC4B7] uppercase mt-4 md:mt-0 mb-2">
-                  Quick Links
+                  Company
                 </span>
                 <span className="my-2">
                   <Link

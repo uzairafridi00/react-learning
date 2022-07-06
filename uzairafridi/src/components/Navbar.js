@@ -48,6 +48,13 @@ function Navbar() {
                   </Link> */}
 
                   <Link
+                    to="/blog"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    Blog
+                  </Link>
+
+                  <Link
                     to="/contact"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
@@ -136,13 +143,19 @@ function Navbar() {
                     Skills
                   </Link> */}
 
-                  {/* <Link
+                {/* <Link
                     to="/about"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     About
                   </Link> */}
 
+                <Link
+                  to="/blog"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Blog
+                </Link>
 
                 <Link
                   to="/contact"
