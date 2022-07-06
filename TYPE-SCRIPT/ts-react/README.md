@@ -1,4 +1,4 @@
-# Using TypeScript in React
+# Why Should You Use TypeScript in React
 
 1. TS will make your app safe from typed safety
 because it is strongly typed language.
@@ -8,7 +8,7 @@ because it is strongly typed language.
         npx create-react-app my-app --template typescript
 
     ```
-- [x] If any object is null in array of JSON then typescript recognize it, on the other hand React just break your application if any of object found to be null. TypeScript add question mark to know (recognize) that Object is possibly 'null' or not.
+3. If any object is null in array of JSON then typescript recognize it, on the other hand React just break your application if any of object found to be null. TypeScript add question mark to know (recognize) that Object is possibly 'null' or not.
 
 ```
     {name: "Ahmad", school: null}
@@ -17,7 +17,51 @@ because it is strongly typed language.
 
 ```
 
-It will help you prevent so many issues in future when getting null objects from JSON. 
+-> It will help you prevent so many issues in future when getting null objects from JSON. 
+
+4. When you are working with applications which has multiple components,
+If someone will work in your code then no one will understand the props passing the data inside complex components.
+
+Then it become hard for us to know that the props in passing the string or integer value.
+So for this we use interface in typescript (like JAVA) which will describe how an object will look.
+And props is object which is passing down the values to components.
+
+So in interface we describe the props Types which is type of String, Integer or boolean. Also we can declare
+functions. Interface will make sure your application type Safety.	
+
+
+```
+
+interface Props {
+  title: string;
+  description: string;
+  getName: () => string;
+}
+
+```
+
+We can also add ? mark to our Interface vars that it can be undefined. It will exist but it won't have anyting.
+
+
+```
+
+    
+interface Props {
+  title: string;
+  description: string;
+  getName?: () => string;
+}
+
+function ComponentB(props: Props) {
+
+    const [name, setName] = React.useState<string>("");
+
+    const onClick = () => {
+        const name = props.getName?.();
+        setName(name || "");
+    }
+
+```
 
 
 
