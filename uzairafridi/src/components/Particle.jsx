@@ -25,7 +25,7 @@ function Particle() {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "#0a192f",
             },
           },
           fpsLimit: 120,
@@ -72,7 +72,7 @@ function Particle() {
                 default: "bounce",
               },
               random: false,
-              speed: 6,
+              speed: 3,
               straight: false,
             },
             number: {

@@ -31,8 +31,8 @@ function App() {
   return (
     <>
       <div className="App">
-        <Particle />
         <Router>
+          {/* <Particle /> */}
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />}></Route>
