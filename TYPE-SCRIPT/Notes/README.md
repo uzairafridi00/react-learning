@@ -53,7 +53,7 @@ TypeScript is transpiled into JavaScript using a compiler. TypeScript being conv
 
 2.  Here is an example of more things you could add to the tsconfig.json file:
 
-        ```
+    ```
         {
 
         'include': ['src'],
@@ -62,6 +62,6 @@ TypeScript is transpiled into JavaScript using a compiler. TypeScript being conv
             }
         }
 
-        ```
+    ```
 
 3. You can open the file in an editor to add those options. This will configure the TypeScript compiler to transpile TypeScript files located in the src/ directory of your project, into JavaScript files in the build/ directory.
