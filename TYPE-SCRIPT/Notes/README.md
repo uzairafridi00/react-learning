@@ -56,11 +56,11 @@ TypeScript is transpiled into JavaScript using a compiler. TypeScript being conv
         ```
         {
 
-    "include": ["src"],
-    "compilerOptions": {
-    "outDir": "./build"
-    }
-    }
+        'include': ['src'],
+        'compilerOptions': {
+            'outDir': './build'
+            }
+        }
 
         ```
 
