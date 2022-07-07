@@ -1,14 +1,14 @@
-import React from "react";
+import React, {FC} from "react";
 import "./App.css";
+import { Person } from "./components/Person";
 
-function App() {
-  
-
+const App: FC = () => {
   return (
     <>
-     
+      <div>Hello TypeScript App</div>
+      <Person name="Uzair" age={22} email="uzair@gmail.com"/>
     </>
   );
-}
+};
 
 export default App;
