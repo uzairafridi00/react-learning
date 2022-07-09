@@ -5,7 +5,7 @@
 	
 
 
-We can also use | this operator to define null as well with string.
+We can also use UNION this | operator to define null as well with string.
 
 	
     const [country, setCountry] = useState<string | null>("")

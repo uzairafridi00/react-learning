@@ -48,6 +48,11 @@ FUNCTIONS
 --> If it doesn't return anything then simply write "void"
 
 
+_________________________________________
+
+
+We can also pass the type of <any>
+
 
 
 

@@ -1,8 +1,10 @@
 import React, {FC} from "react";
 import "./App.css";
-import { EnumAndType, HairColor } from "./components/EnumAndType";
+import { EnumAndType} from "./components/EnumAndType";
 import { Person } from "./components/Person";
 import { PersonA } from "./components/PersonA";
+
+import { HairColor } from "./enums/Enums";
 
 const App: FC = () => {
   return (

@@ -1,11 +1,5 @@
 import React, { FC, ChangeEvent, useState } from "react";
-
-export enum HairColor {
-  Blonde = "Hair is Blonde",
-  Brown = "Hair is Brown",
-  Pink = "Hair is Pink",
-  Black = "Hais is Black",
-}
+import { HairColor } from "../enums/Enums";
 
 interface PersonProp {
   name: string;
