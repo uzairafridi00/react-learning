@@ -65,3 +65,24 @@ TypeScript is transpiled into JavaScript using a compiler. TypeScript being conv
     ```
 
 3. You can open the file in an editor to add those options. This will configure the TypeScript compiler to transpile TypeScript files located in the src/ directory of your project, into JavaScript files in the build/ directory.
+
+
+___________________________________________________________________________________
+
+
+# Note Keeping Tips
+
+1. Be Able to debug.
+2. When you get error and be able to read the error and interpret the error that how to solve it.
+
+3. It is funamental or crucial to read your error in TypeScript.
+
+4. You can search online to post your error in Stackoverflow.
+
+5. You can also pass the type of <any> to avoid error for some time. It doesn't recommended.
+
+6. Make separate folder for ENUMS and INTERFACES and export them to your TSX components.
+
+	Make a one file for Enums.ts and Interfaces.ts and define all your enums and interfaces in these files.
+
+	Then you will be able to use them through out your applications.
