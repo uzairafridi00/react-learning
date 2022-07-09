@@ -79,7 +79,7 @@ ________________________________________________________________________________
 
 4. You can search online to post your error in Stackoverflow.
 
-5. You can also pass the type of <any> to avoid error for some time. It doesn't recommended.
+5. You can also pass the type of `<any>` to avoid error for some time. It doesn't recommended.
 
 6. Make separate folder for ENUMS and INTERFACES and export them to your TSX components.
 
