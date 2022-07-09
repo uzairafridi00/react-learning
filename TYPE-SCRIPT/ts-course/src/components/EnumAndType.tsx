@@ -1,12 +1,5 @@
 import React, { FC, ChangeEvent, useState } from "react";
-import { HairColor } from "../enums/Enums";
-
-interface PersonProp {
-  name: string;
-  age: number;
-  email: string;
-  hairColor: HairColor,
-}
+import { PersonProp } from "../interfaces/Interfaces";
 
 export const EnumAndType: FC<PersonProp> = ({ name, age, email, hairColor }) => {
   const [country, setCountry] = useState<string | null>("");

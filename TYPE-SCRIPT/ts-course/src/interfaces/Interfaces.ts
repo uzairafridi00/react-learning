@@ -1,6 +1,6 @@
-import { HairColor } from "../components/EnumAndType";
+import { HairColor } from "../enums/Enums";
 
-export interface Person {
+export interface PersonProp {
     name: string;
     age: number;
     email: string;
