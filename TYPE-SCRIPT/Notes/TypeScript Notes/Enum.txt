@@ -1,0 +1,89 @@
+An enum is a special "class" that represents a group of constants (unchangeable variables).
+
+
+In interface we define the objects
+
+In enum we define a set of different options
+
+
+	enum HairColor {
+		Blonde = "Hair is Blonde",
+		Brown = "Hair is Brown",
+		Pink = "Hair is Pink",
+		Black = "Hais is Black"
+
+	}
+
+
+
+	{HairColor.Blonde}        --> To render
+
+
+
+
+Create enum above the props so that we can access it in Props
+Now we can use each Enum (option) for each User as Props (Property)
+
+
+
+	export enum HairColor {
+		Blonde = "Hair is Blonde",
+		Brown = "Hair is Brown",
+		Pink = "Hair is Pink",
+		Black = "Hais is Black"
+	}
+
+
+
+Now you can access it in another component as a Props
+
+	<EnumAndType  name="Uzair" age={22} email="uzair@gmail.com" hairColor={HairColor.Blonde}/>
+
+
+
+Define it in props as well and in Interface also
+
+	
+	interface PersonProp {
+  		name: string;
+  		age: number;
+  		email: string;
+  		hairColor: HairColor,
+	}
+
+
+export const EnumAndType: FC<PersonProp> = ({ name, age, email, hairColor })
+
+
+<h2>{hairColor}</h2>
+
+
+__________________________________________
+
+
+If we have two types or more than we can use Types
+
+
+	type NameType = "Uzair" | "Umair"
+
+	const nameForType: NameType = "Uzair"
+
+
+It will accept the above two values or else it will give error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

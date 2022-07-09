@@ -1,0 +1,21 @@
+	npx create-react-app ts-app --template typescript
+
+or
+
+	yarn create react-app --template typescript
+
+
+tsconfig.json -> file define all the properties of ts
+
+
+remove unecessary file and run
+
+
+
+	npm start
+or
+	yar start
+
+
+_______________________________________________________
+

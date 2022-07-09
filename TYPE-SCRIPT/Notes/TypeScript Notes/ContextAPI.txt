@@ -1,0 +1,54 @@
+import the createContext
+
+
+const AppContext = createContext(null)
+
+
+const ContextValue = {
+	name: "Uzair",
+	age: 20,
+	country: "pak",
+
+}
+
+
+
+	It will not work perfectly. It gives error of type. In order to define values we have to create interface.
+	and pass that interface to createContext()
+
+
+
+interface AppContextProvider {
+	name: string;
+	age: numnber;
+	country: string;
+}
+
+
+	
+	Now pass this interface to context API to know the types of values.
+	We also used UNION sign "|" which indicates that it can be type of interface or null (both).
+
+
+const AppContext = createContext<AppContextInterface | null>(null)
+
+
+
+
+	Now inside component the values we are making also pass the interface to them
+
+
+
+const ContextValue: AppContextInterface = {
+	name: "Uzair",
+	age: 20,
+	country: "pak",
+
+}
+
+
+
+
+
+
+

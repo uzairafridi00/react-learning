@@ -1,0 +1,64 @@
+const name = "Uzair"			--> React
+
+const name: string = "Uzair"		--> TypeScript
+
+
+const age: number = "Uzair"		--> It shows error
+
+const age = "Uzair"			--> It doesn't show error
+
+
+
+const isMarried: boolean = false
+
+
+________________________________________
+
+Ternary Operator
+
+	condition ? expression1 : expression2
+
+
+{name}
+{age}
+{isMarried ? "Married": "Not Married"}
+
+
+________________________________________
+
+
+
+FUNCTIONS
+
+
+	cons getName = (name: string): number => {
+		if (name === "Uzair") {
+			return 20;
+		} else {
+			return 0;
+		}
+
+	}
+
+
+
+--> We will specify what type of parameter it will get, also at the end of paranthesis
+    we will specify what type of data it will return
+
+--> If it doesn't return anything then simply write "void"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

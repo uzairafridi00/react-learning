@@ -1,0 +1,71 @@
+1) We can also define the type of Components
+
+	import React, {FC} from "react";
+
+FC stands for functional Component. 
+
+	const App: FC = () => {
+  		return (
+    			<>
+      
+    			</>
+  		);
+	};
+
+
+This is how we define React Function Component in React using TypeScript
+
+
+
+
+
+2) Creating new Component -> Install typescript react code snippet
+
+
+	tsrpfc       -> TypeScript React Pure Functional Component
+
+
+
+__________________________________________
+
+
+Props
+
+
+1) In React we just simply pass the props to our Component, but in typescript
+   we define the props type using interface.
+	
+
+	interface Name {
+		name: string,
+		age: number,
+		isMarried: boolean,
+
+		getName: (name: string) => string,	
+	}
+
+
+	
+Calling Interface
+
+
+	export const Person = (props: Name) => {
+		
+	}
+
+
+When you pass question mark to props it becomes optional
+
+	name?:string        --> (optional)
+
+
+
+
+We can also pass the Props to Functional Component
+
+
+	export const Person: FC<PersonProp> = ({name, age, email}) => {}
+
+
+
+	
