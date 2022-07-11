@@ -6,3 +6,9 @@ export interface PersonProp {
     email: string;
     hairColor: HairColor,
 }
+
+export interface Student {
+    class: string;
+    fee: number;
+    grades: string;
+}

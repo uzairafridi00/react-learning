@@ -12,7 +12,7 @@ const App: FC = () => {
       <div>Hello TypeScript Application</div>
       {/* <Person name="Uzair" age={22} email="uzair@gmail.com"/> */}
       {/* <PersonA name="Uzair" age={22} email="uzair@gmail.com"/> */}
-      {/* <EnumAndType  name="Uzair" age={22} email="uzair@gmail.com" hairColor={HairColor.Blonde}/> */}
+      <EnumAndType  name="Uzair" age={22} email="uzair@gmail.com" hairColor={HairColor.Blonde}/>
     </>
   );
 };
