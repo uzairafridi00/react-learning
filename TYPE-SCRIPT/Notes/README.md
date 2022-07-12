@@ -83,6 +83,6 @@ ________________________________________________________________________________
 
 6. Make separate folder for ENUMS and INTERFACES and export them to your TSX components.
 
-	Make a one file for Enums.ts and Interfaces.ts and define all your enums and interfaces in these files.
+-> Make a one file for Enums.ts and Interfaces.ts and define all your enums and interfaces in these files.
 
-	Then you will be able to use them through out your applications.
+-> Then you will be able to use them through out your applications.
