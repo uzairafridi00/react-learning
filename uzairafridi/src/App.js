@@ -15,7 +15,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Footer from "./pages/Footer";
 import Blog from "./pages/Blog";
-import Particle from "./components/Particle";
+// import Particle from "./components/Particle";
 
 function App() {
   // AOS library Configuration

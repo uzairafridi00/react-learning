@@ -14,7 +14,8 @@ function Footer() {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#" target="_blank"
+                    href="#"
+                    target="_blank"
                     className="text-gray-200  text-md hover:text-[#0EC4B7]"
                   >
                     Github
@@ -22,7 +23,8 @@ function Footer() {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#" target="_blank"
+                    href="#"
+                    target="_blank"
                     className="text-gray-200  text-md hover:text-[#0EC4B7]"
                   >
                     LinkedIn
@@ -30,7 +32,8 @@ function Footer() {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#" target="_blank"
+                    href="#"
+                    target="_blank"
                     className="text-gray-200  text-md hover:text-[#0EC4B7]"
                   >
                     Twitter
@@ -102,7 +105,7 @@ function Footer() {
           <div className="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
             <div className="sm:w-2/3 text-center py-6">
               <p className="text-sm text-gray-200 font-bold mb-2">
-                © 2022 by Uzair Afridi
+                © Copyright UzairAfridi. All Rights Reserved
               </p>
             </div>
           </div>
