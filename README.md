@@ -1,3 +1,3 @@
 # Learning React
 
-All the code is of my learning React journey
+All the code is of my learning React + TypeScript
