@@ -1,0 +1,74 @@
+1. Conditional Rendering (Ternary Operator) allows you to write if statement
+without using IF statements.
+
+2. Below is the example of if statement
+
+
+const age = 15;
+if(age >= 18) {
+	console.log("Is Over Age")
+} else {
+	console.log("Is Under Age")
+}
+
+
+3. But we can use it instead of writing IF statement
+
+
+age >= 18 ? console.log("Is Over Age") : console.log("Is Under Age")
+
+
+4. Another Example using in React.
+
+	
+
+	function App() {
+	
+	const age = 15
+	
+	return <div>
+	{
+		age >= 18 ? <h1> OVER AGE </h1> : <h1> UNDER AGE </h1>
+	} </div>
+
+	}
+
+
+
+In single line we are able to display our result. 
+
+
+
+5. Example with boolean variable. 
+
+
+	function App() {
+	
+	const age = 15
+	const isGreen = false;
+	
+	return <div>
+	{
+		age >= 18 ? <h1> OVER AGE </h1> : <h1> UNDER AGE </h1>
+	} 
+		
+	<h1 style={{color: isGreen ? "green": "red"}}> THIS HAS COLOR </h1>
+	
+	</div>
+
+	}
+
+
+
+
+6. We can ampersend sign `&&` to display a tag or component.
+
+	{isGreen && <button>Click </button>}
+
+
+This means that if isGreen is True then display button.
+
+
+
+
+

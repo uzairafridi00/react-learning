@@ -1,0 +1,50 @@
+Make two folders client and server for your app
+
+client install npx create-react-app .
+
+
+______________________________________________
+
+In Server run below commands
+
+npm init -y                         (Initializing node js project)
+npm install express
+
+npm install nodemon -D              (Is use to auto compile all the changes you have done in code)
+
+
+code .          (Opens that folder in vsCode)
+
+
+____________________________
+
+Open package.json file -> goto "scripts" and add this line to work nodemon
+
+	"start": "nodemon app.js"
+
+
+
+
+__________________________________
+
+
+# Use to handle different port numbers on server and client side
+
+npm install cors
+	const cors = require('cors')
+
+	app.use(cors)
+
+
+_________________________________
+
+
+Express provides some middleware by default such as express.static(), express.json() and express.urlencoded().
+
+
+_________________________________
+
+
+
+
+

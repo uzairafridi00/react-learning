@@ -1,0 +1,22 @@
+When you want to create an object from CSS modules instead of just calling them
+
+then use module.css
+
+
+App.module.css     --> File Name
+
+
+then we will call this like
+
+	import Style from "./App.module.css";
+
+
+	className={Style.name}
+
+
+
+It will treat the CSS like object.
+
+
+
+

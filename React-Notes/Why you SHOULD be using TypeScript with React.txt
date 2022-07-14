@@ -1,0 +1,72 @@
+3 Different Reasons 
+
+TS will make your app safe from typed safety
+because it is strongly typed language
+
+
+When making app with TypeScript
+
+	npx create-react-app my-app --template typescript
+__________________________
+	
+1) If any object is null in array of JSON then typescript recognize it, on the other
+   hand React just break your application if any of object found to be null.
+ 
+
+	{name: "Ahmad", school: null}
+
+
+TypeScript add question mark to know (recognize) that Object is possibly 'null' or not.
+
+
+	<h1>School: {user.school?.name}</h1>
+
+
+It will help you prevent so many issues in future when getting null objects from JSON.
+
+
+___________________________________________
+
+
+2) When you are working with applications which has multiple components,
+If someone will work in your code then no one will understand the props passing the data inside complex components.
+
+Then it become hard for us to know that the props in passing the string or integer value.
+So for this we use interface in typescript (like JAVA) which will describe how an object will look.
+And props is object which is passing down the values to components.
+
+So in interface we describe the props Types which is type of String, Integer or boolean. Also we can declare
+functions. Interface will make sure your application type Safety.	
+
+
+	// Code
+
+We can also add ? mark to our Interface vars that it can be undefined. It will exist but it won't have anyting.
+
+
+	// Code
+
+
+
+_____________________________________
+
+
+3) 
+
+
+_____________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
