@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { UserProp } from "./Interfaces";
+import { UserProp } from "./interfaces/Interfaces";
 
 function App() {
   const users = [
