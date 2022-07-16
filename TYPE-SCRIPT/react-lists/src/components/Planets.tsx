@@ -16,7 +16,12 @@ export const Planets = (props: IAppProps) => {
 
   return (
     <div>
-      
+      {planets.map((planet,key)=> {
+        // if(planet.isGasPlanet) return <h1>{planet.name}</h1>
+    //    return planet.isGasPlanet && <h1>{planet.name}</h1>
+    return !planet.isGasPlanet && <h1>{planet.name}</h1>
+
+      })}
     </div>
   );
 }
