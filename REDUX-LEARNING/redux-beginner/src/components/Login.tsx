@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React, {FC} from 'react';
 
-export interface IAppProps {
+export interface LoginProp {
 }
 
-export function Login (props: IAppProps) {
+export const Login:FC<LoginProp> = ({}) => {
   return (
     <div>
       
