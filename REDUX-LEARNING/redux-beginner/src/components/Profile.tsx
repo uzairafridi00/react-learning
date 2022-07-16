@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React, {FC} from 'react';
 
-export interface IAppProps {
+export interface ProfileProp {
 }
 
-export function Profile (props: IAppProps) {
+export const Profile: FC<ProfileProp> = ({}) => {
   return (
     <div>
       
