@@ -1,0 +1,17 @@
+1. To Simply Setup React App first we make sure to have or create react app
+
+	npx create-react-app appName --template typescript
+
+
+2. Now we will install Redux toolkit. Below command will install the three libraries.
+
+	npm install redux react-redux @reduxjs/toolkit
+
+
+
+______________________________________
+
+
+If we have two components side by side or siblings then there is no way to pass data to each other.
+We can only pass the props from Parent to Child but for passing the State data to each and every component
+we have to use Redux toolkit, Flux or Context API to be accessible in all components.

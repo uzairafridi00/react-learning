@@ -1,0 +1,42 @@
+1. Thinking about Store. A store is almost like thinking of a container, something that holds information
+   When you create store then it will hold states which we will make it global. Also it will be able to change them.
+
+
+2. We will create a single store which will hold all the states that we might to change.
+
+
+3. Import the redux toolkit in index.js file. Your store will contain all the reducers used in your application.
+
+	
+	import {configureStore} from "@reduxjs/toolkit"
+	import {provider} from "react-redux"
+
+
+	const store = configureStore({
+				
+		reducer: {}		
+
+	})
+
+
+
+// Wrap the app with Provider to access all the states or to be global.
+// Now pass the store that provider will use
+
+
+
+	<Provider store={store}>
+		<App />
+	</Provider>
+
+
+
+
+4. A reducer is a function that takes current information about states, like takes in the previous value of state
+   also takes in actions that you want to perform on states and returns back the new value of that state.
+
+
+
+
+
+
