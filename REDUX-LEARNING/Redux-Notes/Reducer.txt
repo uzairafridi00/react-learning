@@ -1,0 +1,69 @@
+1. A reducer is a function that takes current information about states, like takes in the previous value of state
+   also takes in actions that you want to perform on states and returns back the new value of that state.
+
+
+
+	import {createSlice} from "@reduxjs/toolkit"
+
+
+// createSlice is use to create reducer in a very easy way, through which you can easily split your logic.
+
+	
+	export const userSlice	= createSlice({
+
+		name: "user",	// name of slice (state)
+		initialState: {value: {name: "", age: 0, email: ""} },		// Start value
+
+		
+		// All your reducer function comes here
+		// Every reducer function or action you take it takes a function and also arguments
+		// 1st Arg -> state, 2nd Arg -> action
+		
+
+		// State holds info about current and previous state value. Keeping track of states
+
+		// Action is an object containing two different things. payload and type
+		// payload is an object which you can pass in information that you want to change. Just like function.
+		// type 		
+
+		reducers: {
+			login: (state, action) => {
+				state.value = action.payload
+			} 
+		}
+
+	});
+
+
+
+	export default userSlice.reducer;
+
+
+
+
+
+2. In index.js file import the UserReducer.
+
+
+	import userReducer from "./features/user"
+
+
+	reducer:{
+		user: userReducer
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

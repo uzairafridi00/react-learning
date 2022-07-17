@@ -32,8 +32,7 @@
 
 
 
-4. A reducer is a function that takes current information about states, like takes in the previous value of state
-   also takes in actions that you want to perform on states and returns back the new value of that state.
+
 
 
 
