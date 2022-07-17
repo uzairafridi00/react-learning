@@ -1,0 +1,28 @@
+1. Now we will grab the value of states and display in our component. We will use useSelector hook to do this.
+
+
+	import {useSelector} from "react-redux";
+
+
+	const user = useSelector({state}=> state.user.value)
+
+
+2. Now we can simply access all the states defined in Reducer (User)
+
+	{user.name} {user.age} {user.email}
+
+
+
+
+3. Now export payload or action of reducers
+
+
+	export const {login} = userSlice.actions;
+
+
+
+
+
+
+
+
