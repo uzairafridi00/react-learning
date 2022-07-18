@@ -13,15 +13,19 @@
 	
 		<button onClick={() => {
 
-			dispatch(Login({name: "Uzair", age:20, email: "uzair@gmail.com"}))
+			dispatch(login({name: "Uzair", age:20, email: "uzair@gmail.com"}))
 
 			}}> 
 
 			Login </button>
 		
 	</div>
+
+
 	
 	
+3. Just by changning the reducers i.e login to logout we to dispatch we can define more.
+
 
 
 
