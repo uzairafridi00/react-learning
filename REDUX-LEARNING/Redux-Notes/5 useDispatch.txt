@@ -1,0 +1,27 @@
+1. useDispatch hook is use to modify values of states and useSelector is use to access the values of states.
+
+2. In Login page:
+
+
+	import {useDispatch} from "react-redux"
+	import {Login} from "./features/User"
+
+	const dispatch = useDispatch()
+	
+
+	<div>
+	
+		<button onClick={() => {
+
+			dispatch(Login({name: "Uzair", age:20, email: "uzair@gmail.com"}))
+
+			}}> 
+
+			Login </button>
+		
+	</div>
+	
+	
+
+
+
