@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../features/User";
+import { login, logout } from "../features/User";
 
 export interface LoginProp {}
 
@@ -14,6 +14,16 @@ export const Login: FC<LoginProp> = ({}) => {
         }}
       >
         Login
+      </button>
+
+      <br />
+      <br />
+      <button
+        onClick={() => {
+          dispatch(logout());
+        }}
+      >
+        Logout
       </button>
     </div>
   );
