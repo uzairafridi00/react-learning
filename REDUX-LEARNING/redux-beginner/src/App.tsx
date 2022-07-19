@@ -7,10 +7,12 @@ import { Profile } from './components/Profile';
 
 function App() {
   return (
-    <div className='App'>
+    <div>
+      <div className='App'>
       <Profile />
       <Login />
       <ChangeColor />
+    </div>
     </div>
   );
 }
