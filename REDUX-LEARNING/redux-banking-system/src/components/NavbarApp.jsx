@@ -1,9 +1,16 @@
+import {useSelector } from "react-redux";
+
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+
 function NavbarApp() {
+
+  const money = useSelector((state) => state.amount.money)
+
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -21,7 +28,7 @@ function NavbarApp() {
               
             </Nav>
           
-              <Button variant="outline-success" disabled={true} className="btn-primary">Your Balance: 1000</Button>
+              <Button variant="outline-success" disabled={true} className="btn-primary">Your Balance: {money}</Button>
             
           </Navbar.Collapse>
         </Container>
