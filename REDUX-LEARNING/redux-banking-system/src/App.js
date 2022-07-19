@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navbar from "./components/NavbarApp";
+import Shop from "./components/Shop";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Navbar />
+      <div className="container my-5">
+        <Shop />
+      </div>
+    </>
   );
 }
 
