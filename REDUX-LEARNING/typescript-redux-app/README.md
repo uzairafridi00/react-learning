@@ -17,27 +17,28 @@
 
     ```
 
-6.  type.d.ts
+6.  TypeScript types allows you to set types for your variables, function parameters, and so on 
+    `type.d.ts`.
 
-```
+    ```
 
-interface IArticle {
-    id: number
-    title: string
-    body: string
-}
+    interface IArticle {
+        id: number
+        title: string
+        body: string
+    }
 
-type ArticleState = {
-    articles: IArticle[]
-}
+    type ArticleState = {
+        articles: IArticle[]
+    }
 
-type ArticleAction = {
-    type: string
-    article: IArticle
-}
+    type ArticleAction = {
+        type: string
+        article: IArticle
+    }
 
-type DispatchType = (args: ArticleAction) => ArticleAction
+    type DispatchType = (args: ArticleAction) => ArticleAction
 
-```
+    ```
 
 7.
