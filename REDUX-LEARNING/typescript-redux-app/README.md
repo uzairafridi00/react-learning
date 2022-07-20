@@ -1,4 +1,4 @@
-
+# React Redux with TypeScript App
 
 ## Getting Started with Create React App
 
