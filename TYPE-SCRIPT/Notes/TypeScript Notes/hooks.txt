@@ -1,0 +1,54 @@
+https://github.com/typescript-cheatsheets/react
+
+
+https://github.com/jherr/no-bs-ts/tree/master/series-1
+
+________________________________________________
+
+
+	// create payload 
+
+
+interface Payload {
+	text: string;
+}
+
+
+
+	// Now passing the type to hook i.e useState
+
+
+const [payload, setPayload] = useState<Payload | null>(null);
+
+
+	// Now fetching the data 
+
+
+useEffect(() => {
+	fetch("/data.json")
+	.then(resp => resp.json())
+	.then(data => {
+		setPayload(data)
+	}
+}, [])
+
+
+
+	// Now displaying the data
+
+
+{JSON.stringify(payload)}
+
+
+__________________________________________________
+
+
+
+
+
+
+
+
+
+
+
