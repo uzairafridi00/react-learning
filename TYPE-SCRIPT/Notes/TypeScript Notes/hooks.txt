@@ -44,6 +44,60 @@ __________________________________________________
 
 
 
+	// USEREDUCER
+	// the first one is current state and the second one is action
+	// The second arg for useReducer is starting state and the 1st one is function
+
+
+interface Todo {
+	id: number;
+	done: boolean;
+	text: string;
+}
+
+
+	// ActionType we define for functions
+
+
+type ActionType = 
+	| {type: "ADD", text: string}
+	| {type: "REMOVE", id: number}
+
+
+
+
+const [todos, dispatch] = useReducer((state:Todo[], action: ActionType) => {
+	switch(action.type) {
+		case "ADD":
+		return [
+			...state,
+			{
+			id: state.length,
+			text: action.text,
+			done: false,
+			}
+		]
+
+		case "REMOVE":
+		return [
+			state.filter(({id}) => id !== action.id)
+		]
+	
+		default:
+			throw new Error()
+	}
+}, [])
+
+
+
+________________________________________________________________
+
+
+
+	// useRef hook
+
+
+const todoRef = useRef<HTMLInputElement>(null)
 
 
 
