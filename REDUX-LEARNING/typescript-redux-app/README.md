@@ -1,17 +1,43 @@
 # React Redux with TypeScript App
 
-## Getting Started with Create React App
+1.  Create React TypeScript app with `npx create-react-app my-app --template typescript`
+2.  The `store` folder that contains files related to React Redux.
+3.  The `type.d.ts` file that holds the TypeScript types, which can be used now in other files without importing.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+4.  `npm install redux react-redux redux-thunk` or `yarn add redux react-redux redux-thunk`
 
-## Available Scripts
+5.  We also have to install their types as development dependencies to help TypeScript understand the libraries.
 
-In the project directory, you can run:
+    ```
+    yarn add -D @types/redux @types/react-redux @types/redux-thunk
 
-### `npm start`
+    Or for npm:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    npm install -D @types/redux @types/react-redux @types/redux-thunk
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    ```
+
+6.  type.d.ts
+
+```
+
+interface IArticle {
+    id: number
+    title: string
+    body: string
+}
+
+type ArticleState = {
+    articles: IArticle[]
+}
+
+type ArticleAction = {
+    type: string
+    article: IArticle
+}
+
+type DispatchType = (args: ArticleAction) => ArticleAction
+
+```
+
+7.
