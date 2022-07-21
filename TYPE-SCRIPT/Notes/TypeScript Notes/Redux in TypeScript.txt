@@ -1,0 +1,32 @@
+https://redux-toolkit.js.org/introduction/getting-started
+
+
+	# Redux + Plain JS template
+npx create-react-app my-app --template redux
+
+	# Redux + TypeScript template
+npx create-react-app my-app --template redux-typescript
+
+______________________________________________________________________
+	
+
+	// First of all install Redux toolkit
+
+
+npm install redux react-redux @reduxjs/toolkit
+
+
+	// Create Redux store and wrap that store to work throughout the application
+	// You can read the Redux Notes or take an example from already created Redux apps in repo
+
+
+	// Redux Slice are the Slices of global store for different things i.e UserSlice, PasswordSlice, todoSlice, ProfileSlice etc
+
+	// Now Create Slice (Global Store) 
+	
+
+
+
+
+
+
