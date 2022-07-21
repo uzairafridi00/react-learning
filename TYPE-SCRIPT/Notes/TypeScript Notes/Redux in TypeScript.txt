@@ -23,6 +23,11 @@ npm install redux react-redux @reduxjs/toolkit
 	// Redux Slice are the Slices of global store for different things i.e UserSlice, PasswordSlice, todoSlice, ProfileSlice etc
 
 	// Now Create Slice (Global Store) 
+	// You have global store and in toolkit model you can have different slices of that store 
+
+	// When you create Slice then add those to reducers
+
+	// 
 	
 
 
