@@ -28,6 +28,10 @@ npm install redux react-redux @reduxjs/toolkit
 	// When you create Slice then add those to reducers
 
 	// useSelector is use to get Todos
+	// useDispatch to change the 
+
+
+	// More You can read the code TYPE-SCRIPT\redux-type-app folder
 	
 
 
