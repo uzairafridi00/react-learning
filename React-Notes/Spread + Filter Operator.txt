@@ -1,0 +1,119 @@
+...  => spread Operator
+
+
+	// When you put three dots it means that you want to make an array
+	// that is composed of everything in this list + with new value 
+
+
+const [todoList, setTodoList] = useState([])
+
+const [newTask, setNewTask] = useState("")
+
+
+	// Now Using spread operator we will copy the todoList array and add the new value of newTask to it without changing something
+
+
+const newTodoList = [...todoList, newTask]
+
+
+	// or we can directly do it 
+
+
+setTodoList([...todoList, newTask])
+
+
+
+_________________________________________________
+
+
+	// When you will pass an arg to react events then call anonymous function which will call this function (event)
+
+
+onClick={deleteTask(task)}		(Not Good Way)
+
+onClick={() => deleteTask(task)}         (Right Way)
+
+
+
+
+___________________________________________________
+
+
+
+	// FILTER
+
+	// Imagine you have array with elements, and you want to keept the array same but wants to delete any element from it
+	// Filter takes a function inside of it which iterate over an array, and you keep the element which return true
+	// false which you don't want to keep	
+
+
+	// JS CODE
+
+const arr = [1,2,3]
+const newArr = arr.filter((num) => {
+	if(num === 1) {
+		return false
+	}else {
+		return true
+	}
+})
+
+
+______________________________
+
+
+
+	// REACT CODE with complicated One
+
+
+const deleteTask(taskName) => {
+	const newTodoList = todoList.filter((task) => {
+		if(task === taskName) {
+			return false
+		} else {
+			return true
+		}
+	})
+
+	setTodoList(newTodoList)
+}
+
+
+
+
+
+	// REACT ONE LINE CODE
+
+
+
+const deleteTask(taskName) => {
+	const newTodoList = todoList.filter((task) => {
+		return task !== taskName
+	})
+
+	setTodoList(newTodoList)
+}
+
+
+
+
+	// More Simple One
+
+
+
+const deleteTask(taskName) => {
+	const newTodoList = todoList.filter((task) => task !== taskName)
+
+	setTodoList(newTodoList)
+}
+
+
+	// OR Pass directly
+
+
+const deleteTask(taskName) => 
+	setTodoList(todoList.filter((task) => task !== taskName)
+}
+
+
+
