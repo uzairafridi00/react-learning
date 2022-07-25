@@ -1,0 +1,26 @@
+COMPONENT LIFE CYCLE
+
+	There are three stages in react life cycle
+	1) mounting -> The component appear in the screen (appearing).
+	2) updating -> The UI or component is changing.
+	3) unmounting -> opposite of unmounting (disappearing).
+
+
+	More you can take example from images.
+
+
+
+________________________________________________________________________
+
+
+useEffect
+
+	The Effect Hook lets you perform side effects in function components:
+	Mostly it is used to fetch data from API and display on screen.	
+
+	useEffect(()=>{
+		
+	})
+
+
+
