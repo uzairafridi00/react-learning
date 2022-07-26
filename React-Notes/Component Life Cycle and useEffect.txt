@@ -20,7 +20,27 @@ useEffect
 
 	useEffect(()=>{
 		
-	})
+	}, [])
 
 
+	Array of dependency tells us what props or state changes we want to trigger the useEffect
+	When you want to run useEffect once then you put array empty otherwise if you want to trigger every
+	time your component changes then pass that value to array. It will trigger everytime when you make any changes.
+	
+
+______________________________________________________
+
+
+	When you want to trigger the useEffect when the component disappears then we can return a function.
+	it will executed when the component unmounts.
+
+
+
+	useEffect(()=>{
+	
+		return()=>{
+
+		}
+
+	}, [])
 
