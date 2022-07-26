@@ -28,6 +28,9 @@ useEffect
 	time your component changes then pass that value to array. It will trigger everytime when you make any changes.
 	
 
+
+	
+
 ______________________________________________________
 
 
