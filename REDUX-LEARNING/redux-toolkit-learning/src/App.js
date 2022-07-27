@@ -7,16 +7,18 @@ import Navbar from "./components/Navbar";
 import Modal from "./components/Modal";
 
 function App() {
-  const { cartItems } = useSelector((state) => state.cart);
+  const { cartItems } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(calculateTotals());
     // eslint-disable-line react-hooks/exhaustive-deps
   }, [cartItems]);
 
+  const { isOpen } = useSelector((store) => store.modal);
+
   return (
     <main>
-      <Modal />
+      {isOpen && <Modal />}
       <Navbar />
       <CartContainer />
     </main>
