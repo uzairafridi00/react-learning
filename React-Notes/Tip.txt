@@ -1,0 +1,9 @@
+When you want to use Variable in String then use backticks
+	just use ${}
+
+
+	`www.google.com/name=${name}`
+
+
+
+______________________________________________________________
