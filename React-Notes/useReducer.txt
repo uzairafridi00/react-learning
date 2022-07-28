@@ -1,1 +1,139 @@
-.
+	//The useReducer Hook is similar to the useState Hook.
+
+	//It allows for custom state logic.
+
+	//If you find yourself keeping track of multiple pieces of state that rely on complex logic, 
+	//useReducer may be useful.
+
+	
+useReducer(<reducer>, <initialState>)
+
+
+	//The reducer function contains your custom state logic which change your current state
+	//and the initialStatecan be a simple value but generally will contain an object.
+	//The useReducer Hook returns the current state and a dispatch method.
+
+___________________________________________________________
+
+	//We can also pass the value to Reducer but good idea is to pass object because later your hook will become
+	//more complex. 
+	//It returns two values the state (i.e object) and a function dispatch which we call to update the state.
+	
+
+
+const [state, dispatch] = useReducer(reducer, {count:0})
+
+
+	
+	//Reducer function take two values i.e state and action. We pass the action to dispatch function.
+	//And reducer return new updated state.
+
+
+function reducer(state, action) {
+	return {count: state.count+1}	
+}
+
+
+function increment() {
+	dispatch()
+}
+
+
+<button onClick={increment}>+</button>
+<span>{state.count}</span>
+
+
+
+	// This is a simple Case
+___________________________________________________________
+
+
+	// If you want to decrement or use more action i.e dispatch then we need to define type
+
+
+
+
+function reducer(state, action) {
+	switch(action.type) {
+		case 'increment':
+			return {count: state.count+1}
+		
+		case 'decrement':
+			return 	{count: state.count-1}
+
+		default:
+			return state
+	}
+}
+
+
+const [state, dispatch] = useReducer(reducer, {count:0})
+
+
+function increment() {
+	dispatch({type: 'increment'})
+}
+
+
+function increment() {
+	dispatch({type: 'decrement'})
+}
+
+
+<button onClick={increment}>+</button>
+<span>{state.count}</span>
+<button onClick={decrement}>-</button>
+
+
+
+____________________________________________________________
+
+
+
+	// We can also define GLOBAL var i.e Actions
+
+
+const ACTIONS = {
+	INCREMENT:'increment',
+	DECREMENT:'decrement'
+}
+
+
+function reducer(state, action) {
+	switch(action.type) {
+		case ACTIONS.INCREMENT:
+			return {count: state.count+1}
+		
+		case ACTIONS.DECREMENT:
+			return 	{count: state.count-1}
+
+		default:
+			return state
+	}
+}
+
+
+
+
+const [state, dispatch] = useReducer(reducer, {count:0})
+
+
+function increment() {
+	dispatch({type: ACTIONS.INCREMENT})
+}
+
+
+function increment() {
+	dispatch({type: ACTIONS.DECREMENT})
+}
+
+
+<button onClick={increment}>+</button>
+<span>{state.count}</span>
+<button onClick={decrement}>-</button>
+
+
+________________________________________________
+
+
+
