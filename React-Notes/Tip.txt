@@ -7,3 +7,7 @@ When you want to use Variable in String then use backticks
 
 
 ______________________________________________________________
+
+Avoid Refreshing of page
+
+    e.preventDefault();
