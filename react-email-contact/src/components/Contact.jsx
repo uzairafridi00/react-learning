@@ -1,9 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 
+import "./contact.css";
+
 function Contact() {
   const form = useRef();
+  const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,10 +21,11 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("Message Sent");
+          setStatus({ type: 'success' });
         },
         (error) => {
           console.log(error.text);
+          setStatus({ type: 'error', error });
         }
       );
   };
@@ -31,13 +35,15 @@ function Contact() {
       <StyledContactForm>
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="user_name" required/>
+          <input type="text" name="user_name" required />
           <label>Email</label>
-          <input type="email" name="user_email" required/>
+          <input type="email" name="user_email" required />
           <label>Message</label>
           <textarea name="message" />
-          <input type="submit" value="Send" required/>
+          <input type="submit" value="Send" required />
         </form>
+        {status?.type === 'success' && <div class="success">Message has been sent successfully.</div>}
+        {status?.type === 'error' && <div class="error">Message Sending Failed.</div>}
       </StyledContactForm>
     </>
   );
