@@ -36,3 +36,7 @@ Email: {{user_email}}
   <input type="submit" value="Send" />
 </form>
 ```
+
+10. Now write your YOUR_SERVICE_ID from Email Service Tab. YOUR_TEMPLATE_ID from Email Templates. And YOUR_PUBLIC_KEY from Account.
+
+
