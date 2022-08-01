@@ -31,7 +31,7 @@
 // If you want to make any property as an optional add question mark with variable
 
 
-	type Person = {
+	type Person {
 		name?: string;        // You can pass a value or it can be an optional
 		age?: number;
 	}
@@ -108,8 +108,83 @@ _______________________________________________________________________
 
 
 // We have two types of Aliases (type and interface)
-// 
+// They both will work same
+
+
+
+	type Person {
+		name?: string;        // You can pass a value or it can be an optional
+		age?: number;
+	}	
+
+	interface Person {
+		name?: string;        // You can pass a value or it can be an optional
+		age?: number;
+	}	
+
+
+_____________________________________________
+
+
+// Difference 
+
+// TYPE
+// If we have two type of X and Y and want to use the properties of X in Y
+// then simply pass X to Y with & sign.
+// Type is extended
+// With type we put = sign
+
+
+	type X = {
+		a: string;
+		b: number;
+	}
+
+	type Y = X & {
+		c: string;
+		d: number
+	}
+
+
+	let y: Y = {
+		a: "av",
+		d: 32
+	}
 
 
 
 
+// INTERFACE
+// In interface we use extends key word to extends the properties of one interface to another
+
+	
+	interface Person {
+		name: string;   
+		age: number;
+	}
+
+	
+	interface Male extends Person {
+		profession: string;
+	}
+
+
+
+
+// We can also extends the interface to type
+// It will work fine and vice versa (with interface)
+
+	interface Person {
+		name: string;   
+		age: number;
+	}
+
+	
+	type Male = Person & {
+		profession: string;
+	}
+
+
+
+_____________________________________________________________
+		
