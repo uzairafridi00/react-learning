@@ -1,5 +1,5 @@
 1) Be Able to debug.
-2) When you get error and be able to read the error and interpret the error that how to solve it.
+2) When you get error -> be able to read the error and interpret the error that how to solve it.
 
 3) It is funamental or crucial to read your error in TypeScript.
 

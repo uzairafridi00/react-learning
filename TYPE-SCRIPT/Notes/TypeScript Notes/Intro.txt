@@ -1,0 +1,115 @@
+	let name:string;
+	let age: number;
+	let isStudent:boolean;
+	let hobbies: string[] or number[]
+
+
+	// Tuple type with fixed values
+	let role: [string, number]     
+	role = ["student", 5]
+
+
+	// Defining object but Object contain alot of properties
+	let person: Object;       
+
+
+// Defining Objects
+
+	type or interface define an OBJECT
+
+	type Person = {
+		name: string;
+		age: number;
+	}
+
+
+// Now we can assign this Person Object to person var
+
+	let person: Person;
+
+
+// If you want to make any property as an optional add question mark with variable
+
+
+	type Person = {
+		name?: string;        // You can pass a value or it can be an optional
+		age?: number;
+	}
+
+
+	let person:Person {
+		name: "Uzair"
+	}
+
+
+// We can also assign this type to an array of Persons
+
+
+	let lotsOfPeople: Person[];
+
+
+
+// We can also pass two types to one single variable using UNION
+// Now you can pass number and string to age variable
+
+
+	let age: number | string;
+
+
+// There is also another type "any"
+// Doesn't have restriction, you can keep any type in this.
+// Not recommended.
+
+	let age: any;
+
+
+// Instead of "any" ther is another type "unknown"
+// Use unknwon if you don't know the type 
+// unknown is recommended
+
+	let age: unknown
+
+___________________________________________________________________
+
+
+// Functions
+
+
+	function printName(name: string) {
+		console.log(name)
+	}
+
+	
+	printName("Uzair")
+
+
+
+// We can directly give function type to function just like an object.
+
+	function printName: Function;
+
+
+// But there is better way to assign type to function
+// void means this function doesn't return anything
+// At the end void, number, string shows the return type of function
+
+
+	let printName: (name: string, age: number) => void;            => void returns undefined
+	let printName: (name: string, age: number) => number;
+	let printName: (name: string, age: number) => string;
+
+	let printName: (name: string, age: number) => never;		=> never doesn't return anything
+
+
+
+
+_______________________________________________________________________
+
+
+
+// We have two types of Aliases (type and interface)
+// 
+
+
+
+
